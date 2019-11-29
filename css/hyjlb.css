@@ -1,0 +1,346 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.nav{
+	position: relative;
+	width: 1580px;
+	height: 32px;
+	background-color:#f8f8f8; 
+	margin-left: -10px;
+}
+.nav_left{
+	display: inline-block;
+	margin-left: 200px;
+}
+.nav_left li{
+	float: left;
+	list-style: none;
+	margin-left: 6px;
+    line-height: 30px;
+}
+.nav_left li a{
+	font-size: 10px;
+	text-decoration: none;
+	color: #000000;
+}
+.nav_right{
+	display: inline-block;
+	margin-left: 470px;
+}
+.nav_right li{
+	float: left;
+	line-height: 30px;
+	margin-right: 24px;
+	list-style: none;
+}
+.nav_right li a{
+	text-decoration:none;
+	font-size: 10px;
+}
+.nav_right li a i{
+	width: 24px;
+	height: 24px;
+	display: inline-block;
+	background:url(../images/hyjlb/top_bg.png);
+	background-repeat: no-repeat;
+	background-position: -38px -40px;
+}
+.navbar{
+	position: relative;
+	width: 1580px;
+	height: 54px;
+	margin-left: -14px;
+}
+.navbar-header .navbar-brand{
+	padding-top: 0px;
+	position: absolute;
+	left: 220px;
+}
+#nav-green{
+	height: 54px;
+	width: 100%;
+	background-color:#37c249 ;
+	padding-left: 414px;
+}
+#nav-green li{
+	width: 120px;
+	height: 54px;
+	text-align: center;
+    float: left;
+    list-style: none;
+    line-height: 54px;
+}
+#nav-green li:hover{
+	background-color: #20a832;
+}
+#nav-green li a{
+	height: 54px;
+	width: 120px;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+#nav-green li i img{
+	width: 12px;
+	height: 12px;
+	
+}
+.green_active{
+	background-color: #20a832;
+}
+.go-first{
+	line-height: 54px;
+	margin-left: 280px;
+}
+.go-first a{
+	text-decoration: none;
+	font-size: 12px;
+	color: #fff;
+}
+.club_banner{
+	width: 1580px;
+	height: auto;
+	background-color: #f1f2f5;
+	position: relative;
+	margin-top: -17px;
+}
+.club_banner_left{
+	width: 254px;
+	height: 422px;
+	margin-left: 194px;
+}
+.club_banner_left_top{
+	width: 254px;
+	height: 216px;
+	background: url(../images/hyjlb/thumb.png);
+	background-repeat: no-repeat;
+	background-position: center 10px;
+}
+.club_banner_left_top .club_login_button{
+	width:230px;
+	height: 42px;
+	border: none;
+	background-color: #ff8800;
+    font-size: 18px;
+    color: #fff;
+    margin: 150px auto;
+    cursor: pointer;
+}
+.club_banner_left_bottom{
+	background-color: #fff;
+}
+.user_btn{
+	width: 14.84px;
+	height: 30px;
+	display: inline-block;
+	margin-top: 10px;
+}
+#user_left_btn{
+	float: left;
+}
+#user_right_btn{
+	float: right;
+	margin-right: 34px;
+}
+.user_right_inner{
+	margin-left: 24px;
+	margin-top: 18px;
+}
+.user_right_inner i{
+	width: 42px;
+	height: 42px;
+	display: inline-block;
+	margin-left: 12px;
+}
+.user_right_1{
+	background: url(../images/hyjlb/hulb.png);
+	background-repeat: no-repeat;
+	background-position: 0px -12px;
+}
+.user_right_2{
+	background: url(../images/hyjlb/hulb.png);
+	background-repeat: no-repeat;
+	background-position: -62px -12px;
+}
+.user_right_3{
+	background: url(../images/hyjlb/hulb.png);
+	background-repeat: no-repeat;
+	background-position: 0px -68px;
+}
+.user-gifts{
+
+}
+#gift-btn-l{
+	float: left;
+	margin-top: -6px;
+}
+#gift-btn-r{
+	float: right;
+	margin-right: 22px;
+	margin-top: -6px;
+}
+.no_right{
+	width: 160px;
+	height: 24px;
+	text-align: center;
+	margin-left: 40px;
+	margin-top: 30px;
+}
+.club-banner-right{
+	position: relative;
+	width: 920px;height: 420px;
+	margin-top: -422px;
+	margin-left: 456px;
+
+}
+#tn-slide{
+	position: absolute;
+	overflow: hidden;
+	
+}
+.carsour{
+    position: absolute;
+	width: 6440px;
+    left: -920px;
+    z-index: 10;
+    transition: all 0.1s;
+}
+.carsour li{
+	list-style: none;
+	float: left;
+}
+.carsour li img{
+	width: 920px;
+	height: 420px;
+}
+.preNext{
+	width: 45px;
+	height: 100px;
+	background-color: rgba(0,0,0,.2);
+	z-index: 30;
+	position: absolute;
+	top: 160px;
+	display: none;
+}
+.preNext:hover{
+	transition: all 0.5s;
+	background-color: rgba(0,0,0,0.5);
+}
+.preNext.pre{
+padding-top: 28px;
+padding-left: 4px;
+}
+.preNext.next{
+	padding-top: 28px;
+	padding-left: 4px;
+	right: 0px;
+}
+#point{
+	position: absolute;
+	z-index: 30;
+	left: 404px;
+	top: 390px; 
+}
+#point li{
+	width: 14px;
+	height: 14px;
+	background-color: #000000;
+	border-radius: 50px;
+	margin-left: 10px;
+	list-style: none;
+	float: left;
+}
+#point .point-active{
+	background-color: #ff8800;
+}
+.active_right{
+	position: relative;
+	width: 346px;
+	height: 356px;
+	background-color: #fff;
+	margin-left: 1030px;
+	margin-top: 23px;
+	padding-top: 54px;
+}
+.active_right_top{
+	position: absolute;
+	width: 305px;
+	height: 28px;
+	text-align: center;
+    top: 26px;
+}
+.active_right_top span{
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 6px;
+	color: #ff703e;
+}
+.active_right .task{
+	float: left;
+	margin-left: 32px;
+	margin-top: 10px;
+	display:inline-block;
+	width: 125px;
+	height: 125px;
+	text-align: center;
+	color: #fff;
+	font-size: 18px;
+	text-decoration: none;padding-top: 84px;
+}
+.task1{
+background: url(../images/hyjlb/activeright.png);
+background-repeat: no-repeat;
+background-position: 0px 0px;
+}
+.task1:hover{
+background: url(../images/hyjlb/activeright2.png);
+}
+.task2{
+background: url(../images/hyjlb/activeright.png);
+background-repeat: no-repeat;
+background-position: -164px 0px;
+}
+.task2:hover{
+background: url(../images/hyjlb/activeright2.png);
+background-position: -164px 0px;
+}
+.task3{
+background: url(../images/hyjlb/activeright.png);
+background-repeat: no-repeat;
+background-position: 0px -156px;
+}
+.task3:hover{
+background: url(../images/hyjlb/activeright2.png);
+background-position: 0px -152px;
+}
+.task4{
+background: url(../images/hyjlb/activeright.png);
+background-repeat: no-repeat;
+background-position: -164px -156px;
+}
+.task4:hover{
+background: url(../images/hyjlb/activeright2.png);
+background-position: -164px -152px;
+}
+.dblock_right{
+	width: 767px;
+	height: 493px;
+	margin-top: 60px;
+	margin-left: 606px;
+} 
+.thumbnail{
+	float: left;
+}
+.caption p span{
+	color: #ff9453;
+}
+.caption p input{
+	width: 60px;
+	height: 30px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #ff9453;
+    border: none;
+    float: right;
+}

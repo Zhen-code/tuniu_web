@@ -1,0 +1,1559 @@
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>旅游网</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <!--适配手机屏幕-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <link rel="shortcut icon"  href="https://csdnimg.cn/public/favicon.ico" >
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+     <link rel="stylesheet" type="text/css" href="css/msdz.css">
+    <script src="js1/jquery-3.3.1.min.js"></script>
+    <script src="js1/bootstrap.min.js"></script>
+    <script src="js1/control.js"></script>
+     <script src="js1/notice.js"></script>
+    <script src="js1/slide.js"></script>
+    <script src="js1/menu_active.js"></script>
+</head>
+   <body>
+    <div class="container" style="height: 30px;width: 100%;position: relative;">
+     
+   <!-- 顶部导航栏 -->
+    <nav class="navbar" id="top_menu" role="navigation">
+   <div>
+      <ul id="top_menu_left">
+         <li><a href="login.html" target="blank">登录</a></li>
+         <li style="height: 14px;width: 2px;background-color: #ccd4df;margin-top: 10px"></li>
+         <li><a href="register.html">注册</a></li>
+         <li><a href="xrzx.html" style="color:#65d758 "><img src="">新人礼品</a></li>
+      </ul>
+      <ul id="top_menu_right">
+         <li class="tnsl"><a href="tnsl.html" target="blank"><img src="">途牛商旅</a></li>
+         <li class="lybh"><a href="lybh.html" target="blank"><img src="">旅游百货</a></li>
+         <li ><a href="qyly.html" style="color: #ff8800;"><img src="">企业旅游</a></li>
+         <li ><a href="hyjlb.html" target="_blank" style="color: #ff8800;"><img src="">会员俱乐部</a></li>
+         <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+               我的订单 
+               <b class="caret"></b>
+            </a>
+         </li>
+         <li class="wzdt">
+            <a href="#" >
+               网站地图
+               <b class="caret"></b>
+            </a>
+         </li>
+     <li><a href="https://weibo.com/tuniulvyou?sudaref=www.tuniu.com&display=0&retcode=6102"><img src="images/weibo.png"></a></li>
+     <li><a href="#"><img src="images/phone.png"></a></li>
+     <li><a href="#"><img src="images/weixin.png"></a></li>
+      <li><a href="login.html" target="_blank"><img src="images/message.png" title="登录"></a></li>
+      </ul>
+  </div>
+    </nav>
+    <!-- 顶部导航栏结束 -->
+    <!-- 搜索导航 -->
+     <nav id="search_nav" class="navbar">
+        <div class="tuniu">
+        <a href="index.html" title="途牛旅游网"> <img src="images/tuniu.png"></a>
+        </div>
+        <div class="position">
+          <span class="station">广州站<b class="caret"></b></span><br>
+          <a href="" style="color: #ff8800;font-size: 12px">门市地址</a> 
+        </div>
+        <div class="show_city">
+          <li id="under"></li>
+          <h4>热门城市</h4>
+          <p>
+            <a href="">北京</a>
+            <a href="">南京</a>
+            <a href="">上海</a>
+            <a href="">杭州</a>
+            <a href="">苏州</a>
+            <a href="">天津</a>
+            <a href="">深圳</a>
+            <a href="">无锡</a>
+            <a href="">成都</a><br>
+            <a href="">重庆</a>
+            <a href="">武汉</a>
+            <a href="">沈阳</a>
+            <a href="">宁波</a>
+            <a href="">广州</a>
+            <a href="">西安</a>
+            <a href="">郑州</a>
+          </p>
+          <div class="station_search_box">
+            <span class="glyphicon glyphicon-search" style="color: #ccc"></span>
+            <input type="text" name="" placeholder="搜索城市">
+          </div>
+          <ul id="tags" class="station_titlelist">
+            <li class="sa_active"><a>ABCDE</a></li>
+            <li><a>FGHI</a></li>
+            <li><a>KLMNP</a></li>
+            <li><a>QRSTW</a></li>
+            <li><a>XYZ</a></li>
+          </ul>
+          <div id="tag_content">
+            <div id="tagcontent1" class="tagContent   selectTag">
+              <div class="line-left">A</div>
+              <div class="line-right">
+                <a href="">鞍山</a>
+                <a href="">安庆</a>
+                <a href="">安阳</a>
+              </div>
+            </div>
+            <div id="tagcontent2" class="tagContent">
+              <div class="line-left">B</div>
+              <div class="line-right">
+                <a href="">北京</a>
+                <a href="">包头</a>
+                <a href="">安阳</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    <div class="input-group">
+      <div class="input-group-btn">
+        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">所有产品<span class="caret"></span></button>
+      </div><!-- /btn-group -->
+      <input type="text" placeholder="欧洲">
+       <span class="input-group-btn">
+        <button class="btn" type="button" style="border: none;background-color: #ff8800;border-radius: 0;height: 36px;width: 68px"><span class="glyphicon glyphicon-search" style="color: white"></span></button>
+      </span>
+    </div><!-- /input-group -->
+    <div class="gjss">高级搜索<span class="caret"></span></div>
+    <div class="kf">
+        <img src="images/advphone.png">
+    </div>
+</nav>
+<!-- 搜索导航结束 -->
+<!-- 绿色菜单导航开始 -->
+<nav id="green_menu">
+      <ul id="green_menu_ul">
+        <li><a href="#">首页</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><a href="gty.html">跟团游</a><span class="caret"></span></a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">自由行<span class="caret"></span></a>
+        </li> 
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">游轮游<span class="caret"></span></a>
+        </li> 
+        <li><a href="#">酒+景<span class="sr-only">(current)</span></a></li>
+         <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">机票<span class="caret"></span></a>
+        </li>
+         <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">酒店<span class="caret"></span></a>
+        </li>
+        <li ><a href="#">火车票<span class="sr-only">(current)</span></a></li>
+        <li ><a href="#">汽车票<span class="sr-only">(current)</span></a></li>
+        <li ><a href="#">用车<span class="sr-only">(current)</span></a></li> 
+        <li><a href="#">门票<span class="sr-only">(current)</span></a></li>
+        <li ><a href="#">特卖<span class="sr-only">(current)</span></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">主题游<span class="caret"></span></a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">出游服务<span class="caret"></span></a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">定制游<span class="caret"></span></a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">金融<span class="caret"></span></a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">攻略<span class="caret"></span></a>
+        </li>
+      </ul>
+</nav>
+<!-- 绿色导航结束 -->
+<div class="coursel">
+    <ul class="list">
+        <li class="item active "></li>
+        <li class="item"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+    </ul>
+    <ul class="point_list">
+        <li class="point active" data-index=0>夏一站向世界出发</li>
+        <li class="point" data-index=1>哪里值得玩</li>
+        <li class="point" data-index=2>当季热推</li>
+        <li class="point" data-index=3>暑假游欧洲</li>
+        <li class="point" data-index=4>海岛与城</li>
+        <li class="point" data-index=5>亲子度假酒店</li>
+    </ul>
+    <button type="button" class="carsouel_btn" id="goprev"><</button>
+    <button type="button" class="carsouel_btn" id="gonext">></button>
+</div>
+<!-- 轮播图结束 -->
+<div class="sfq">
+    <ul>
+            <li class="sfq_1"></li>
+            <li class="sfq_2"></li>
+            <li class="sfq_3"></li>
+            <li class="sfq_4"></li>
+            <li class="sfq_5"></li>
+             <li class="sfq_6"></li>
+            <li class="sfq_7"></li>
+        </ul>
+</div>
+<!-- 手风琴结束 -->
+<div class="vacation">
+    <ul>
+        <li id="djly">度假旅游</li>
+        <li id="jp">机票</li>
+        <li id="jd">酒店</li>
+        <li id="cjzyx">超级自由行</li>
+        <li id="hc">火车&nbsp;汽车</li>
+        <li id="yl">邮轮</li>
+        <li id="mp">门票</li>
+    </ul>
+</div>
+<div id="djly_module">
+    <ul>
+        <li><a>海岛</a>&nbsp;<a>亲子</a><br><h6><a href="">蜜月 &nbsp;牛人专线</a></h6></li>
+        <li><a>广州周边旅游</a><br><h6><a href="">按天数分 &nbsp; 游乐园 &nbsp; 海滨</a></h6></li>
+        <li><a>境内旅游</a><br><h6><a href="">三亚&nbsp; 云南 &nbsp;四川&nbsp; 北京</a></h6></li>
+        <li><a>马尔代夫</a><br><h6><a href="">蜜莫凡彼岛&nbsp;库拉玛提岛</a></h6></li>
+        <li><a>欧洲</a>&nbsp;<a>美洲 </a><br><h6><a href="">瑞士 &nbsp;法国 &nbsp;美国 &nbsp;加拿大</a></h6></li>
+        <li><a>日本 </a><br><h6><a href="">东京</a>&nbsp; <a>大阪</a>&nbsp;<a>北海道</a>&nbsp;<a> 冲绳</a></h6></li>
+        <li><a>东南亚</a>&nbsp;<a> 南亚</a> &nbsp;<a>泰国</a><br><h6><a href="">普吉岛</a>&nbsp;<a> 巴厘岛</a>&nbsp;<a> 新加坡市</a></h6></li>
+        <li><a>香港</a>&nbsp; <a>澳门</a>&nbsp;<a> 台湾</a><br><h6><a href="">香港迪士尼乐园</a> &nbsp;<a>台北</a></h6></li>
+        <li><a>澳新</a>&nbsp;<a> 中东非洲</a><br><h6><a href="">新西兰 &nbsp;迪拜&nbsp; 埃及&nbsp; 斐济</a></h6></li>
+    </ul>
+</div>
+<!-- 左侧旅游广告结束 -->
+<div class="myd">
+  <div><img src="images/myd.png"></div>
+  <div class="notice">
+  <ul>
+    <li>
+      <a href=""><香港迪士尼乐园2日景酒套餐>不含大交通，住迪士尼酒店，圆宝贝童话梦，2日</a><br>
+      <span class="user">用户***510630</span><span class="yd">40分钟前预订</span>
+    </li>
+    <li>
+     <a href=""><云南-昆明-大理-丽江-香格里拉双飞8日游>自营超4万人出游,途牛严选导游</a><br>
+      <span  class="user">用户***510630</span><span class="yd">40分钟前预订</span> 
+    </li>
+   <li>
+     <a href=""><云南-昆明-大理-丽江-香格里拉双飞8日游>自营超4万人出游,途牛严选导游</a><br>
+      <span  class="user">用户***510630</span><span class="yd">40分钟前预订</span> 
+    </li>
+    <li>
+     <a href=""><云南-昆明-大理-丽江-香格里拉双飞8日游>自营超4万人出游,途牛严选导游</a><br>
+      <span  class="user">用户***510630</span><span class="yd">40分钟前预订</span> 
+    </li>
+  </ul>
+</div>
+  <div><img src="images/sun.png"></div>
+  <div><img src="images/wjb.png"></div>
+  <div><img src="images/cyfw.png"></div>
+  <div class="cyfw_con">
+    <ul class="left">
+      <li><a href="">签 证</a></li>
+      <li><a href="">签 证</a></li>
+      <li><a href="">签 证</a></li>
+    </ul>
+    <ul class="right">
+      <li><a href="">当地玩乐</a></li>
+      <li><a href="">当地玩乐</a></li>
+      <li><a href="">当地玩乐</a></li>
+    </ul>
+  </div>
+</div>
+<div class="main_content">
+ <!-- 超级特卖菜单栏 -->
+        <nav id="cjtm_menu">
+      <ul class="cjtm_list" >
+        <li class="cl"><a href="#">超级特卖</a></li>
+        <li class="cl cjtm_active"><a href="#">超级自由行</a></li>
+        <li class="cl"><a href="#">旅游分期</a></li>
+        <li class="cl"><a href="#">特价机票</a></li>
+        <li class="cl"><a href="#">特价酒店</a></li>
+        <li class="cl"><a href="#">特价签证</a></li>
+        <li class="cl"><a href="#">特价门票</a></li>
+         <li class="cl" style="float: right"><a href="#" style="font-size: 10px;color: #999999">更多产品></a></li>
+      </ul>
+  </nav>
+    <div id="cjtm_pane">
+      <div class="cjtm_box">
+        <ul>
+          <li>
+          <div class="media">
+  <div class="media-left">
+    <a href="#">
+      <img class="media-object" src="images/zhcl.png">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">5天21时56分</h4>
+    <small>&lt;挂林-漓江-阳宿高铁动车4日游</small>
+    <p>￥1448起</p>
+  </div>
+</div>
+</li> 
+<li>
+  <div class="media">
+  <div class="media-left">
+    <a href="#">
+      <img class="media-object" src="images/zhcl.png">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">5天21时56分</h4>
+    <small>&lt;挂林-漓江-阳宿高铁动车4日游</small>
+    <p>￥1448起</p>
+  </div>
+</div>
+</li> 
+<li>
+  <div class="media">
+  <div class="media-left">
+    <a href="#">
+      <img class="media-object" src="images/zhcl.png">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">5天21时56分</h4>
+    <small>&lt;挂林-漓江-阳宿高铁动车4日游</small>
+    <p>￥1448起</p>
+  </div>
+</div>
+</li> 
+ <li>
+  <div class="media">
+  <div class="media-left">
+    <a href="#">
+      <img class="media-object" src="images/zhcl.png">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">5天21时56分</h4>
+    <small>&lt;挂林-漓江-阳宿高铁动车4日游</small>
+    <p>￥1448起</p>
+  </div>
+</div>
+</li>        
+        </ul>
+        </div>
+        <div class="cjzyx_box">
+          <ul>
+          <li><img src="images/czrm/zyx.png"></li>
+           <li><img src="images/czrm/zyx.png"></li>
+            <li><img src="images/czrm/zyx.png"></li>
+        </ul>
+        </div>
+        <div class="lufq_box">
+          <ul>
+          <li><img src="images/czrm/lhfq.png"></li>
+           <li><img src="images/czrm/lhfq.png"></li>
+        </ul>
+        </div>
+        <div class="tjjp_box">
+          <ul>
+          <li><img src="images/czrm/cqhk.png"></li>
+          <li><img src="images/czrm/cqhk.png"></li>
+        </ul>
+          </div>
+           <div class="tjjd_box">
+          <ul>
+            <li><img src="images/czrm/jd.png"></li>
+            <li><img src="images/czrm/jd.png"></li>
+          </ul>
+        </div>
+         <div class="tjqz_box">
+         <ul>
+           <li><img src="images/czrm/zyx.png">visa</li>
+           <li><img src="images/czrm/zyx.png">visa</li>
+         </ul>
+            </div>
+            <div class="tjmp_box">
+          <ul>
+            <li><img src="images/czrm/mp.png"></li>
+            <li><img src="images/czrm/mp.png"></li>
+          </ul>
+        </div>
+    </div>
+       <nav id="djrw_menu">
+        <span>当季热玩</span>
+      <ul class="djrw_list" >
+        <li class="dl  djrw_active"><a href="#">出境·港澳台</a></li>
+        <li class="dl"><a href="#">出境长线</a></li>
+        <li class="dl"><a href="#">出境自助</a></li>
+        <li class="dl"><a href="#">游轮</a></li>
+        <li class="dl"><a href="#">海岛</a></li>
+        <li class="dl"><a href="#">境内跟团</a></li>
+        <li class="dl"><a href="#">境内自助</a></li>
+        <li class="dl"><a href="#">周边/自驾</a></li>
+      </ul>
+  </nav>
+  <div id="djrw_pane">
+  <div class="djrw_left">
+    <ul>
+      <li>
+<a href="">夏一站 向世界出发</a><span class="badge" style="background-color: #259dd2">GO></span>
+      </li>
+      <li id="a2">
+ <a href="" >哪里值得玩</a><span class="badge" style="background-color: #259dd2">GO></span>
+      </li>
+      <li  id="a3">
+<a href="">亲子度假酒店榜</a><span class="badge" style="background-color: #259dd2">GO></span>        
+      </li>
+    </ul>
+  </div>
+  <div class="djrw_right">
+    <div class="cjgat">
+       <ul>
+      <li><a href=""><img src="images/djrw/nrzx.png"></a></li>
+      <li><a href=""><img src="images/djrw/nrzx.png"></a><a href=""></li>
+      <li><a href=""><img src="images/djrw/nrzx.png"></a><a href=""></li>
+    </ul>
+    <ul>
+      
+      <li><a href=""><img src="images/djrw/nrzx.png"></a></li>
+    </ul>
+    </div>
+    <div class="cjcx">
+             <ul>
+      <li><a href=""><img src="images/djrw/nrzx.png"></a></li>
+      <li><a href=""><img src="images/djrw/nrzx.png"></a><a href=""></li>
+      <li><a href=""><img src="images/djrw/nrzx.png"></a><a href=""></li>
+    </ul>
+    <ul>
+      <li><a href=""><img src="images/djrw/nrzx.png"></a></li>
+      <li><a href=""><img src="images/djrw/nrzx.png"></a></li>
+      <li><a href=""><img src="images/djrw/nrzx.png"></a></li>
+    </ul>
+    </div>
+    <div class="cjzz">
+             <ul>
+      
+      <li><a href=""><img src="images/djrw/nrzx.png"></a><a href=""></li>
+      <li><a href=""><img src="images/djrw/nrzx.png"></a><a href=""></li>
+    </ul>
+    <ul>
+      <li><a href=""><img src="images/djrw/nrzx.png"></a></li>
+      <li><a href=""><img src="images/djrw/nrzx.png"></a></li>
+      <li><a href=""><img src="images/djrw/nrzx.png"></a></li>
+    </ul>
+    </div>
+    <div class="yl">
+             <ul>
+      <li><a href=""><img src="images/djrw/nrzx.png"></a></li>
+      <li><a href=""><img src="images/djrw/nrzx.png"></a><a href=""></li>
+      <li><a href=""><img src="images/djrw/nrzx.png"></a><a href=""></li>
+    </ul>
+    <ul>
+      <li><a href=""><img src="images/djrw/nrzx.png"></a></li>
+      <li><a href=""><img src="images/djrw/nrzx.png"></a></li>
+      <li><a href=""><img src="images/djrw/nrzx.png"></a></li>
+    </ul>
+    </div>
+    <div class="hd">
+             <ul>
+      <li><a href=""><img src="images/djrw/nrzx.png"></a></li>
+      <li><a href=""><img src="images/djrw/nrzx.png"></a><a href=""></li>
+      <li><a href=""><img src="images/djrw/nrzx.png"></a><a href=""></li>
+    </ul>
+    <ul>
+      <li><a href=""><img src="images/djrw/nrzx.png"></a></li>
+      <li><a href=""><img src="images/djrw/nrzx.png"></a></li>
+      <li><a href=""><img src="images/djrw/nrzx.png"></a></li>
+    </ul>
+    </div>
+    <div class="jngt">
+             <ul>
+      <li><a href=""><img src="images/djrw/nrzx.png"></a></li>
+      <li><a href=""><img src="images/djrw/nrzx.png"></a><a href=""></li>
+      <li><a href=""><img src="images/djrw/nrzx.png"></a><a href=""></li>
+    </ul>
+    <ul>
+      <li><a href=""><img src="images/djrw/nrzx.png"></a></li>
+      <li><a href=""><img src="images/djrw/nrzx.png"></a></li>
+      <li><a href=""><img src="images/djrw/nrzx.png"></a></li>
+    </ul>
+    </div>
+    <div class="jnzz">
+             <ul>
+      <li><a href=""><img src="images/djrw/nrzx.png"></a></li>
+      <li><a href=""><img src="images/djrw/nrzx.png"></a><a href=""></li>
+      <li><a href=""><img src="images/djrw/nrzx.png"></a><a href=""></li>
+    </ul>
+    <ul>
+      <li><a href=""><img src="images/djrw/nrzx.png"></a></li>
+      <li><a href=""><img src="images/djrw/nrzx.png"></a></li>
+      <li><a href=""><img src="images/djrw/nrzx.png"></a></li>
+    </ul>
+    </div>
+    <div class="zbzj">
+             <ul>
+      <li><a href=""><img src="images/djrw/nrzx.png"></a></li>
+      <li><a href=""><img src="images/djrw/nrzx.png"></a><a href=""></li>
+      <li><a href=""><img src="images/djrw/nrzx.png"></a><a href=""></li>
+    </ul>
+    <ul>
+      <li><a href=""><img src="images/djrw/nrzx.png"></a></li>
+      <li><a href=""><img src="images/djrw/nrzx.png"></a></li>
+      <li><a href=""><img src="images/djrw/nrzx.png"></a></li>
+    </ul>
+    </div>
+  </div>
+  </div>
+   <nav id="cjcx_menu">
+        <span>出境长线</span>
+      <ul class="cjcx_list" >
+        <li class="cj  cjcx_active"><a href="#">精选</a></li>
+        <li class="cj"><a href="#">欧洲</a></li>
+        <li class="cj"><a href="#">美洲</a></li>
+        <li class="cj"><a href="#">中东非</a></li>
+        <li class="cj"><a href="#">澳新</a></li>
+        <li class="cj"><a href="#">马代</a></li>
+        <li class="cj"><a href="#">海岛</a></li>
+        <a href="" style="float: right;line-height: 38px;font-size: 12px;color:#999999">更多产品></a>
+      </ul>
+  </nav>
+  <div id="cjcx_pane">
+  <div class="cjcx_left">  
+    <div class="rmjd_wrap">
+      <span>热门景点玩法</span>
+    <ul style="float: left;">
+      <li><a href="">西班牙葡萄牙</a></li>
+      <li><a href="" >澳凯墨</a></li>
+      <li><a href="">马尔代夫</a>       
+      </li>
+    </ul>
+    <ul style="float: right;" id="rmul_right">
+      <li><a href="">黄石公园</a></li>
+      <li><a href="" >神秘古国埃及</a></li>
+      <li><a href="">毛里求斯</a>       
+      </li>
+    </ul>
+    </div>
+    <div class="bolan">
+    <img src="images/bolan.png">
+    </div>
+  </div>
+ <div class="cjcx_right">
+     <div class="jx">
+       <ul>
+        <li><a href=""><img src="images/cjcx/nrzx.png"></a><a href=""></li>
+     <li><a href=""><img src="images/cjcx/nrzx.png"></a><a href=""></li>
+      <li><a href=""><img src="images/cjcx/nrzx.png"></a><a href=""></li>
+    </ul>
+    <ul>
+      <li><a href=""><img src="images/cjcx/nrzx.png"></a><a href=""></li>
+      <li><a href=""><img src="images/cjcx/nrzx.png"></a><a href=""></li>
+      <li><a href=""><img src="images/cjcx/nrzx.png"></a></li>
+    </ul>
+    </div>
+    
+     <div class="oz">
+             <ul>
+      <li><a href=""><img src="images/cjcx/oz1.png"></a></li>
+      <li><a href=""><img src="images/cjcx/oz1.png"></a><a href=""></li>
+      <li><a href=""><img src="images/cjcx/oz1.png"></a><a href=""></li>
+    </ul>
+    <ul>
+      <li><a href=""><img src="images/cjcx/oz1.png"></a></li>
+      <li><a href=""><img src="images/cjcx/oz1.png"></a></li>
+      <li><a href=""><img src="images/cjcx/oz1.png"></a></li>
+    </ul>
+    </div>
+    <div class="mz"> 
+             <ul>
+      <li><a href=""><img src="images/cjcx/mz1.png"></a></li>
+      <li><a href=""><img src="images/cjcx/mz1.png"></a><a href=""></li>
+      <li><a href=""><img src="images/cjcx/mz1.png"></a><a href=""></li>
+    </ul>
+    <ul>
+      <li><a href=""><img src="images/cjcx/mz1.png"></a></li>
+      <li><a href=""><img src="images/cjcx/mz1.png"></a></li>
+      <li><a href=""><img src="images/cjcx/mz1.png"></a></li>
+    </ul>
+    </div>
+    <div class="zdf">
+             <ul>
+      <li><a href=""><img src="images/cjcx/zdf1.png"></a></li>
+      <li><a href=""><img src="images/cjcx/zdf1.png"></a><a href=""></li>
+      <li><a href=""><img src="images/cjcx/zdf1.png"></a><a href=""></li>
+    </ul>
+    <ul>
+      <li><a href=""><img src="images/cjcx/zdf1.png"></a></li>
+      <li><a href=""><img src="images/cjcx/zdf1.png"></a></li>
+      <li><a href=""><img src="images/cjcx/zdf1.png"></a></li>
+    </ul>
+    </div>
+    <div class="ax">
+             <ul>
+      <li><a href=""><img src="images/cjcx/ax1.png"></a></li>
+      <li><a href=""><img src="images/cjcx/ax1.png"></a><a href=""></li>
+      <li><a href=""><img src="images/cjcx/ax1.png"></a><a href=""></li>
+    </ul>
+    <ul>
+      <li><a href=""><img src="images/cjcx/ax1.png"></a></li>
+      <li><a href=""><img src="images/cjcx/ax1.png"></a></li>
+      <li><a href=""><img src="images/cjcx/ax1.png"></a></li>
+    </ul>
+    </div>
+    <div class="md">
+             <ul>
+      <li><a href=""><img src="images/cjcx/md1.png"></a></li>
+      <li><a href=""><img src="images/cjcx/md1.png"></a><a href=""></li>
+      <li><a href=""><img src="images/cjcx/md1.png"></a><a href=""></li>
+    </ul>
+    <ul>
+      <li><a href=""><img src="images/cjcx/md1.png"></a></li>
+      <li><a href=""><img src="images/cjcx/md1.png"></a></li>
+      <li><a href=""><img src="images/cjcx/md1.png"></a></li>
+    </ul>
+    </div>
+    <div class="cj_hd">
+             <ul>
+      <li><a href=""><img src="images/cjcx/hd1.png"></a></li>
+      <li><a href=""><img src="images/cjcx/hd1.png"></a><a href=""></li>
+      <li><a href=""><img src="images/cjcx/hd1.png"></a><a href=""></li>
+    </ul>
+    <ul>
+      <li><a href=""><img src="images/cjcx/hd1.png"></a></li>
+      <li><a href=""><img src="images/cjcx/hd1.png"></a></li>
+      <li><a href=""><img src="images/cjcx/hd1.png"></a></li>
+    </ul>
+    </div>
+  </div>
+  </div>
+   <nav id="cjgat_menu">
+        <span>出境•港澳台</span>
+      <ul class="cg_list" >
+        <li class="cg  cg_active"><a href="#">精选</a></li>
+        <li class="cg"><a href="#">日本</a></li>
+        <li class="cg"><a href="#">泰国</a></li>
+        <li class="cg"><a href="#">海岛</a></li>
+        <li class="cg"><a href="#">东南亚</a></li>
+        <li class="cg"><a href="#">越柬南亚</a></li>
+        <li class="cg"><a href="#">港澳台</a></li>
+        <a href="" style="float: right;line-height: 38px;font-size: 12px;color:#999999">更多产品></a>
+      </ul>
+  </nav>
+  <div id="cg_pane">
+  <div class="cg_left">  
+    <div class="rmmd_wrap">
+      <span>热门目的地</span>
+    <ul style="float: left;">
+      <li><a href="">曼谷</a></li>
+      <li><a href="" >巴厘岛</a></li>
+      <li><a href="">东京</a>       
+      </li>
+    </ul>
+    <ul style="float: right;" id="rmul_right">
+      <li><a href="">普吉岛</a></li>
+      <li><a href="" >日本</a></li>
+      <li><a href="">新加坡</a>       
+      </li>
+    </ul>
+    </div>
+    <div class="dama">
+    <img src="images/dama.png">
+    </div>
+  </div>
+ <div class="cg_right">
+     <div class="jx">
+       <ul>
+     <li><a href=""><img src="images/cjgat/tg1.png"></a></li>
+      <li><a href=""><img src="images/cjgat/tg1.png"></a><a href=""></li>
+      <li><a href=""><img src="images/cjgat/tg1.png"></a><a href=""></li>
+     
+    </ul>
+    <ul>
+      <li><a href=""><img src="images/cjgat/tg1.png"></a></li>
+      <li><a href=""><img src="images/cjgat/tg1.png"></a><a href=""></li>
+      <li><a href=""><img src="images/cjgat/tg1.png"></a><a href=""></li>
+      
+    </ul>
+    </div>
+    
+     <div class="rb">
+             <ul>
+      <li><a href=""><img src="images/cjgat/rb1.png"></a></li>
+      <li><a href=""><img src="images/cjgat/rb1.png"></a><a href=""></li>
+      <li><a href=""><img src="images/cjgat/rb1.png"></a><a href=""></li>
+    </ul>
+    <ul>
+      <li><a href=""><img src="images/cjgat/rb1.png"></a></li>
+      <li><a href=""><img src="images/cjgat/rb1.png"></a></li>
+      <li><a href=""><img src="images/cjgat/rb1.png"></a></li>
+    </ul>
+    </div>
+    <div class="tg"> 
+             <ul>
+      <li><a href=""><img src="images/cjgat/tg1.png"></a></li>
+      <li><a href=""><img src="images/cjgat/tg1.png"></a><a href=""></li>
+      <li><a href=""><img src="images/cjgat/tg1.png"></a><a href=""></li>
+    </ul>
+    <ul>
+      <li><a href=""><img src="images/cjgat/tg1.png"></a></li>
+      <li><a href=""><img src="images/cjgat/tg1.png"></a></li>
+      <li><a href=""><img src="images/cjgat/tg1.png"></a></li>
+    </ul>
+    </div>
+    <div class="hd">
+             <ul>
+      <li><a href=""><img src="images/cjgat/hd1.png"></a></li>
+      <li><a href=""><img src="images/cjgat/hd1.png"></a><a href=""></li>
+      <li><a href=""><img src="images/cjgat/hd1.png"></a><a href=""></li>
+    </ul>
+    <ul>
+      <li><a href=""><img src="images/cjgat/hd1.png"></a></li>
+      <li><a href=""><img src="images/cjgat/hd1.png"></a></li>
+      <li><a href=""><img src="images/cjgat/hd1.png"></a></li>
+    </ul>
+    </div>
+    <div class="dny">
+             <ul>
+      <li><a href=""><img src="images/cjgat/dny1.png"></a></li>
+      <li><a href=""><img src="images/cjgat/dny1.png"></a><a href=""></li>
+      <li><a href=""><img src="images/cjgat/dny1.png"></a><a href=""></li>
+    </ul>
+    <ul>
+      <li><a href=""><img src="images/cjgat/dny1.png"></a></li>
+      <li><a href=""><img src="images/cjgat/dny1.png"></a></li>
+      <li><a href=""><img src="images/cjgat/dny1.png"></a></li>
+    </ul>
+    </div>
+    <div class="yjny">
+             <ul>
+      <li><a href=""><img src="images/cjgat/djny.png"></a></li>
+      <li><a href=""><img src="images/cjgat/djny.png"></a><a href=""></li>
+      <li><a href=""><img src="images/cjgat/djny.png"></a><a href=""></li>
+    </ul>
+    <ul>
+      <li><a href=""><img src="images/cjgat/djny.png"></a></li>
+      <li><a href=""><img src="images/cjgat/djny.png"></a></li>
+      <li><a href=""><img src="images/cjgat/djny.png"></a></li>
+    </ul>
+    </div>
+    <div class="gat">
+             <ul>
+      <li><a href=""><img src="images/cjgat/gat1.png"></a></li>
+      <li><a href=""><img src="images/cjgat/gat1.png"></a><a href=""></li>
+      <li><a href=""><img src="images/cjgat/gat1.png"></a><a href=""></li>
+    </ul>
+    <ul>
+      <li><a href=""><img src="images/cjgat/gat1.png"></a></li>
+      <li><a href=""><img src="images/cjgat/gat1.png"></a></li>
+      <li><a href=""><img src="images/cjgat/gat1.png"></a></li>
+    </ul>
+    </div>
+  </div>
+  </div>   
+  <!-- 出境港澳台结束      -->
+  <nav id="jnly_menu">
+        <span>境内旅游</span>
+      <ul class="jnly_list" >
+        <li class="jn  jn_active"><a href="#">精选</a></li>
+        <li class="jn"><a href="#">三亚</a></li>
+        <li class="jn"><a href="#">云南</a></li>
+        <li class="jn"><a href="#">西北/西藏</a></li>
+        <li class="jn"><a href="#">北京/华东</a></li>
+        <li class="jn"><a href="#">广西/福建</a></li>
+        <li class="jn"><a href="#">贵州/陕西</a></li>
+        <a href="" style="float: right;line-height: 38px;font-size: 12px;color:#999999">更多产品></a>
+      </ul>
+  </nav>
+  <div id="jnly_pane">
+  <div class="jnly_left">  
+    <div class="rmjdwf_wrap">
+      <span>热门景点玩法</span>
+    <ul style="float: left;">
+      <li><a href="">曼谷</a></li>
+      <li><a href="" >巴厘岛</a></li>
+      <li><a href="">东京</a>       
+      </li>
+    </ul>
+    <ul style="float: right;" id="rmul_right">
+      <li><a href="">普吉岛</a></li>
+      <li><a href="" >日本</a></li>
+      <li><a href="">新加坡</a>       
+      </li>
+    </ul>
+    </div>
+     <div class="rmmdd_wrap">
+      <span>热门目的地</span>
+    <ul style="float: left;margin-left: -62px">
+      <li><a href="">三亚</a></li>
+      <li><a href="" >厦门</a></li>
+      <li><a href="">桂林</a>       
+      </li>
+    </ul>
+    <ul style="float: right;position: absolute;left: 110px;">
+      <li><a href="">丽江</a></li>
+      <li><a href="" >西北</a></li>
+      <li><a href="">北京</a>       
+      </li>
+    </ul>
+    </div>
+    <div class="nryx">
+    <img src="images/nryx.png">
+    </div>
+  </div>
+ <div class="jnly_right">
+     <div class="jx">
+       <ul>
+     <li><a href=""><img src="images/jnly/jx1.png"></a></li>
+      <li><a href=""><img src="images/jnly/jx1.png"></a><a href=""></li>
+      <li><a href=""><img src="images/jnly/jx1.png"></a><a href=""></li>
+     
+    </ul>
+    <ul>
+      <li><a href=""><img src="images/jnly/jx1.png"></a></li>
+      <li><a href=""><img src="images/jnly/jx1.png"></a><a href=""></li>
+      <li><a href=""><img src="images/jnly/jx1.png"></a><a href=""></li>
+      
+    </ul>
+    </div>
+    
+   
+  </div>
+  </div>
+  <!-- 境内旅游结束  -->
+   <nav id="zbly_menu">
+        <span>周边旅游</span>
+      <ul class="zbly_list" >
+        <li class="zl  zl_active"><a href="#">精选</a></li>
+        <li class="zl"><a href="#">温泉</a></li>
+        <li class="zl"><a href="#">名山胜水</a></li>
+        <li class="zl"><a href="#">游乐园</a></li>
+        <li class="zl"><a href="#">动车/高铁</a></li>
+        <li class="zl"><a href="#">城市</a></li>
+        <li class="zl"><a href="#">巴士自由行</a></li>
+        <a href="" style="float: right;line-height: 38px;font-size: 12px;color:#999999">更多产品></a>
+      </ul>
+  </nav>
+  <div id="zbly_pane">
+  <div class="zbly_left">  
+    <div class="rmwf_wrap">
+      <span>热门玩法</span>
+    <ul style="float: left;">
+      <li><a href="">动车/高铁</a></li>
+      <li><a href="" >一日游</a></li>
+      <li><a href="">三日游</a>       
+      </li>
+    </ul>
+    <ul style="float: right;" id="rmul_right">
+      <li><a href="">名山胜水</a></li>
+      <li><a href="" >二日游</a></li>
+      <li><a href="">三日以上</a>       
+      </li>
+    </ul>
+    </div>
+    <div class="qwzb">
+    <img src="images/qwzb.png">
+    </div>
+  </div>
+ <div class="zbly_right">
+     <div class="jx">
+       <ul>
+     <li><a href=""><img src="images/zbly/jx1.png"></a></li>
+      <li><a href=""><img src="images/zbly/jx1.png"></a><a href=""></li>
+      <li><a href=""><img src="images/zbly/jx1.png"></a><a href=""></li>
+     
+    </ul>
+    <ul>
+      <li><a href=""><img src="images/zbly/jx1.png"></a></li>
+      <li><a href=""><img src="images/zbly/jx1.png"></a><a href=""></li>
+      <li><a href=""><img src="images/zbly/jx1.png"></a><a href=""></li>
+      
+    </ul>
+    </div>
+    
+   
+  </div>
+  </div>
+  <!-- 周边旅游结束 -->
+  <nav id="zzly_menu">
+        <span>自助旅游</span>
+      <ul class="zzly_list" >
+        <li class="zz  zz_active"><a href="#">精选</a></li>
+        <li class="zz"><a href="#">温泉</a></li>
+        <li class="zz"><a href="#">名山胜水</a></li>
+        <li class="zz"><a href="#">游乐园</a></li>
+        <li class="zz"><a href="#">动车/高铁</a></li>
+        <li class="zz"><a href="#">城市</a></li>
+        <li class="zz"><a href="#">巴士自由行</a></li>
+        <a href="" style="float: right;line-height: 38px;font-size: 12px;color:#999999">更多产品></a>
+      </ul>
+  </nav>
+  <div id="zzly_pane">
+  <div class="zzly_left">  
+    <div class="rmmdd_wrap">
+      <span>热门目的地</span>
+    <ul style="float: left;">
+      <li><a href="">马尔代夫</a></li>
+      <li><a href="" >普吉岛</a></li>
+      <li><a href="">塞班岛</a>       
+      </li>
+    </ul>
+    <ul style="float: right;" id="rmul_right">
+      <li><a href="">三亚</a></li>
+      <li><a href="" >巴厘岛</a></li>
+      <li><a href="">厦门</a>       
+      </li>
+    </ul>
+    </div>
+    <div class="zycx">
+    <img src="images/zycx.png">
+    </div>
+  </div>
+ <div class="zzly_right">
+     <div class="rb">
+       <ul>
+     <li><a href=""><img src="images/zzly/rb1.png"></a></li>
+      <li><a href=""><img src="images/zzly/rb1.png"></a><a href=""></li>
+      <li><a href=""><img src="images/zzly/rb1.png"></a><a href=""></li>
+     
+    </ul>
+    <ul>
+      <li><a href=""><img src="images/zzly/rb1.png"></a></li>
+      <li><a href=""><img src="images/zzly/rb1.png"></a><a href=""></li>
+      <li><a href=""><img src="images/zzly/rb1.png"></a><a href=""></li>
+      
+    </ul>
+    </div>
+    
+   
+  </div>
+  </div> 
+  <!-- 自助旅游结束 -->
+  <nav id="yjgl_menu">
+        <span>游记攻略</span>
+      <ul class="yjgl_list" >
+        <li class="yg"><a href="#" style="color: green">发表游记</a></li>
+        <li class="yg"><a href="#">写游记赢大奖</a></li>
+        <a href="" style="float: right;line-height: 38px;font-size: 12px;color:#999999">更多游记></a>
+      </ul>
+  </nav>
+  <div id="yjgl_pane">
+   <ul id="yj_coursel">
+     <li class="yjg yjgactive9">
+       <div class="yjg_left">
+         
+       </div>
+       <div class="yjg_right">
+         <ul class="left">
+           <li style="background: url(images/tnsf/r1.png);"></li>
+           <li style="background: url(images/tnsf/qa.png);"></li>
+         </ul>
+         <ul class="right">
+           <li style="background: url(images/tnsf/r1.png);"></li>
+           <li style="background: url(images/tnsf/r1.png);"></li>
+         </ul>
+       </div>
+     </li>
+     <li class="yjg">
+       <div class="yjg_left">
+         
+       </div>
+       <div class="yjg_right">
+         <ul class="left">
+           <li style="background: url(images/tnsf/r1.png);"></li>
+           <li style="background: url(images/tnsf/qa.png);"></li>
+         </ul>
+         <ul class="right">
+           <li style="background: url(images/tnsf/r1.png);"></li>
+           <li style="background: url(images/tnsf/r1.png);"></li>
+         </ul>
+       </div>
+     </li>
+     <li class="yjg  ">
+       <div class="yjg_left">
+         
+       </div>
+       <div class="yjg_right">
+         <ul class="left">
+           <li style="background: url(images/tnsf/r1.png);"></li>
+           <li style="background: url(images/tnsf/r1.png);"></li>
+         </ul>
+         <ul class="right">
+           <li style="background: url(images/tnsf/r1.png);"></li>
+           <li style="background: url(images/tnsf/r1.png);"></li>
+         </ul>
+       </div>
+     </li>
+     <li class="yjg">
+       <div class="yjg_left">
+         
+       </div>
+       <div class="yjg_right">
+         <ul class="left">
+           <li style="background: url(images/tnsf/qa.png);"></li>
+           <li style="background: url(images/tnsf/r1.png);"></li>
+         </ul>
+         <ul class="right">
+           <li style="background: url(images/tnsf/esdxg.png);"></li>
+           <li style="background: url(images/tnsf/r1.png);"></li>
+         </ul>
+       </div>
+     </li>
+     <li class="yjg ">
+       <div class="yjg_left">
+         
+       </div>
+       <div class="yjg_right">
+         <ul class="left">
+           <li style="background: url(images/tnsf/r1.png);"></li>
+           <li style="background: url(images/tnsf/r1.png);"></li>
+         </ul>
+         <ul class="right">
+           <li style="background: url(images/tnsf/r1.png);"></li>
+           <li style="background: url(images/tnsf/r1.png);"></li>
+         </ul>
+       </div>
+     </li>
+   </ul>
+  </div>
+   <div class="yjg_point">
+     <ul class="yjg_points">
+       <li class="point1 point_active" data-index='0'></li>
+       <li class="point1" data-index="1"></li>
+       <li class="point1" data-index="2"></li>
+       <li class="point1" data-index="3"></li>
+       <li class="point1" data-index="4"></li>
+     </ul>
+   </div>
+   <!-- 游记攻略结束 -->
+   <nav id="lyjhz_menu">
+        <span>旅游局合作</span>
+      <ul class="lyjhz_list" >
+        <a href="" style="float: right;line-height: 38px;font-size: 12px;color:#999999">更多旅游局合作 ></a>
+      </ul>
+  </nav>
+  <div class="lyjhz_pane">
+    <div class="lyj_slide">
+    <ul>
+      <li>
+        <div><img src="images/lyjhz/dsf.png"></div>
+        <a href="">DFS集团</a>
+      </li>
+      <li>
+        <div><img src="images/lyjhz/dfs.png"></div>
+        <a href="">DFS集团</a>
+      </li>
+      <li> <div><img src="images/lyjhz/dfs.png"></div>
+        <a href="">DFS集团</a></li>
+        <li>
+        <div><img src="images/lyjhz/dsf.png"></div>
+        <a href="">DFS集团</a>
+      </li>
+      <li>
+        <div><img src="images/lyjhz/dsf.png"></div>
+        <a href="">DFS集团</a>
+      </li>
+      <li>
+        <div><img src="images/lyjhz/dsf.png"></div>
+        <a href="">DFS集团</a>
+      </li>
+      <li>
+        <div><img src="images/lyjhz/nbgjlz.png"></div>
+        <a href="">DFS集团</a>
+      </li>
+    </ul>
+    <ul>
+     <li>
+        <div><img src="images/lyjhz/dsf.png"></div>
+        <a href="">DFS集团</a>
+      </li>
+      <li> <div><img src="images/lyjhz/nbgjlz.png"></div>
+        <a href="">DFS集团</a></li>
+    </ul>
+    <ul>
+     <li>
+        <div><img src="images/lyjhz/dsf.png"></div>
+        <a href="">DFS集团</a>
+      </li>
+      <li> <div><img src="images/lyjhz/dfs.png"></div>
+        <a href="">DFS集团</a></li>
+    </ul>
+    <ul>
+     <li>
+        <div><img src="images/lyjhz/nbgjlz.png"></div>
+        <a href="">DFS集团</a>
+      </li>
+      <li> <div><img src="images/lyjhz/dfs.png"></div>
+        <a href="">DFS集团</a></li>
+    </ul>
+    <ul>
+     <li>
+        <div><img src="images/lyjhz/dsf.png"></div>
+        <a href="">DFS集团</a>
+      </li>
+      <li> <div><img src="images/lyjhz/dfs.png"></div>
+        <a href="">DFS集团</a></li>
+    </ul>
+    <ul>
+     <li>
+        <div><img src="images/lyjhz/nbgjlz.png"></div>
+        <a href="">DFS集团</a>
+      </li>
+      <li> <div><img src="images/lyjhz/dfs.png"></div>
+        <a href="">DFS集团</a></li>
+    </ul>
+  </div>
+    </div>
+    <div class="inner_service">
+      <a href="">
+          <li><i><img src="images/bx/qdbz.png"></i>
+          <p>阳光保证</p>
+          </li>
+        </a>
+        <a href="">
+          <li>
+            <i><img src="images/bx/fjbz.png"></i>
+<p>产品丰富</p>
+          </li>
+        </a>
+        <a href="">
+          <li><i><img src="images/bx/ydjgbz.png"></i>
+<p>重大灾害保障</p>
+            </li>
+        </a>
+        <a href="">
+          <li><i><img src="images/bx/fjbz.png"></i>
+<p>特殊原因退订保障</p>
+            </li>
+        </a>
+        <a href="">
+          <li><i><img src="images/bx/fjbz.png"></i>
+<p>酒店升级保障</p>
+            </li>
+        </a>
+        <a href="">
+          <li><i><img src="images/bx/qdbz.png"></i>
+<p>酒店升级保障</p>
+            </li>
+        </a>
+        <a href="">
+          <li><i><img src="images/bx/qdbz.png"></i>
+<p>卓越服务</p>
+            </li>
+        </a>
+        <a href="">
+          <li><i><img src="images/bx/qdbz.png"></i>
+<p>卓越服务</p>
+            </li>
+        </a>
+        <a href="">
+          <li><i><img src="images/bx/qdbz.png"></i>
+<p>卓越服务</p>
+            </li>
+        </a>  
+    </div>
+    <div class="faq_wrap datalazyload">
+      <dl>
+        <dt>预订常见问题</dt>
+        <dd>纯玩是什么意思？</dd>
+        <dd>单房差是什么？</dd>
+        <dd>双飞、双卧都是什么意思？</dd>
+        <dd>满意度是怎么计算的？</dd>
+      </dl>
+      <dl>
+        <dt>付款和发票</dt>
+        <dd>签约可以刷卡吗？</dd>
+        <dd>付款方式有哪些？</dd>
+        <dd>怎么网上支付？</dd>
+        <dd>如何获取发票？</dd>
+      </dl>
+      <dl>
+        <dt>
+签署旅游合同</dt>
+        <dd>有旅游合同范本下载吗？</dd>
+        <dd>门市地址在哪里？</dd>
+        <dd>能传真签合同吗？</dd>
+        <dd>可以不签合同吗？</dd>
+      </dl>
+      <dl>
+        <dt>
+旅游预订优惠政策</dt>
+        <dd>什么是抵用券？</dd>
+        <dd>途牛抵用券使用帮助</dd>
+        <dd>什么是旅游券？</dd>
+        <dd>如何获得旅游券？</dd>
+      </dl>
+      <dl>
+        <dt>
+其他事项</dt>
+<dd> 签证相关问题解答 </dd>
+<dd>旅游保险问题解答</dd>
+<dd>退款问题解答</dd>
+<dd>旅途中的问题</dd>
+      </dl>
+      <dl class="tiexin_server">
+        <p class="tiexin_tt">途牛贴心服务</p>
+        <p class="tiexin_count">途牛旅游网创立于2006年10月，并于2014年5 月在纳斯达克成功上市。已在北京、上海、深圳等城市设立了超过300家线下门市，提供全年365天24小时400电话预订服务。
+</p>
+      </dl>
+    </div>
+    <div class="content_left">
+      <div class="rmtt">
+        <div class="tmtt_tt">
+          <span>热门头条</span>
+        </div>
+        <div class="rmtt_content">
+          <p><a href="">【热门】哪里值得玩 趁热去造反</a></p>
+          <p><a href="">【发现】夏一站 向世界出发</a></p>
+          <p><a href="">【活动】订亲子旅拍 赠《蜘蛛侠》电</a></p>
+          <p><a href="">【精选】牛人严选 高性价比的国内旅行</a></p>
+        </div>
+      </div>
+      <div class="sh">
+      <div class="list-group">
+  <a href="#" class="list-group-item">
+   <img src="images/mdcphz/sh.png">
+  </a>
+  <a href="#" class="list-group-item">
+    <img src="images/mdcphz/mddcphz.png">
+  </a>
+  <a href="#" class="list-group-item">
+    <img src="images/mdcphz/yxsc.png">
+  </a>
+  <a href="#" class="list-group-item">
+    <img src="images/mdcphz/yxsc.png">
+  </a>
+  <a href="#" class="list-group-item">
+    <img src="images/mdcphz/yxsc.png">
+  </a>
+  </div>
+      </div>
+      <div class="yhljth">
+        <div class="list-group">
+  <a href="#" class="list-group-item">
+    <img src="images/yhljth/yhljth.png">
+  </a>
+  <a href="#" class="list-group-item">
+    <img src="images/yhljth/qycy.png">
+  </a>
+  <a href="#" class="list-group-item">
+    <img src="images/yhljth/qycy.png">
+  </a>
+  <a href="#" class="list-group-item">
+    <img src="images/yhljth/qycy.png">
+  </a>
+  <a href="#" class="list-group-item">
+    <img src="images/yhljth/jfsc.png">
+  </a>
+</div>
+      </div>
+      <!-- 银行立减特惠结束 -->
+      <div class="cxphb">
+        <span>畅销排行榜</span>
+        <div class="cxphb_menu">
+          <ul class="cxphb_list">
+            <li class="cp cp_active">周边</li>
+            <li class="cp">国内</li>
+            <li class="cp">出境</li>
+          </ul>
+        </div>
+        <div class="cxphb_content">
+          <div class="zb">
+            <ul>
+              <li>
+                <img src="images/cxphp/1.png">
+                <dl>
+                  <dt><h6><a href=""><惠州双月湾2日游>销售No1、虹海湾日出海景房、海景大阳台、楼下就是沙滩、打卡无边际泳池、白云可上车</a>
+                  </h6>
+                  </dt>
+                  <dd>
+                    <p>畅游双月湾 海景房 品海鲜美食</p>
+                    <p>
+                      <span style="float: left;font-size: 12px">跟团游</span>
+                      <span style="float: right;font-size: 14px"><small>￥198</small>起</span>
+                    </p>
+                  </dd>
+                </dl>
+              </li>
+              <li>
+                <img src="images/cxphp/1.png">
+                <dl>
+                  <dt><h6><a href=""><惠州双月湾2日游>销售No1、虹海湾日出海景房、海景大阳台、楼下就是沙滩、打卡无边际泳池、白云可上车</a>
+                  </h6>
+                  </dt>
+                  <dd>
+                    <p>畅游双月湾 海景房 品海鲜美食</p>
+                    <p>
+                      <span style="float: left;font-size: 12px">跟团游</span>
+                      <span style="float: right;font-size: 12px"><small>￥198</small>起</span>
+                    </p>
+                  </dd>
+                </dl>
+              </li>
+              <li>
+                <img src="images/cxphp/1.png">
+                <dl>
+                  <dt><h6><a href=""><惠州双月湾2日游>销售No1、虹海湾日出海景房、海景大阳台、楼下就是沙滩、打卡无边际泳池、白云可上车</a>
+                  </h6>
+                  </dt>
+                  <dd>
+                    <p>畅游双月湾 海景房 品海鲜美食</p>
+                    <p>
+                      <span style="float: left;font-size: 12px">跟团游</span>
+                      <span style="float: right;font-size: 12px"><small>￥198</small>起</span>
+                    </p>
+                  </dd>
+                </dl>
+              </li>
+              <li>
+                <img src="images/cxphp/1.png">
+                <dl>
+                  <dt><h6><a href=""><惠州双月湾2日游>销售No1、虹海湾日出海景房、海景大阳台、楼下就是沙滩、打卡无边际泳池、白云可上车</a>
+                  </h6>
+                  </dt>
+                  <dd>
+                    <p>畅游双月湾 海景房 品海鲜美食</p>
+                    <p>
+                      <span style="float: left;font-size: 12px">跟团游</span>
+                      <span style="float: right;font-size: 14px"><small>￥198</small>起</span>
+                    </p>
+                  </dd>
+                </dl>
+              </li>
+              <li>
+                <img src="images/cxphp/1.png">
+                <dl>
+                  <dt><h6><a href=""><惠州双月湾2日游>销售No1、虹海湾日出海景房、海景大阳台、楼下就是沙滩、打卡无边际泳池、白云可上车</a>
+                  </h6>
+                  </dt>
+                  <dd>
+                    <p>畅游双月湾 海景房 品海鲜美食</p>
+                    <p>
+                      <span style="float: left;font-size: 12px">跟团游</span>
+                      <span style="float: right;font-size: 12px"><small>￥198</small>起</span>
+                    </p>
+                  </dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+          <div class="gn"><ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul></div>
+          <div class="cj"><ul>
+              <li>
+                <div class="media">
+  <div class="media-left media-middle">
+    <a href="#">
+      <img class="media-object" src="images/cxphp/1.png" alt="">
+    </a>
+  </div>
+  <div class="media-body">
+    <h6 class="media-heading"><北京双飞5日游>自营倾情打造</h6>
+    <p>五星高性价比 途牛独立成团</p>
+    <p><span>跟团游</span><span style="float: right;font-size: 12px"><small>￥3444</small>起</span></p>
+  </div>
+</div>
+              </li>
+              <li>
+                 <div class="media">
+    <div class="media-left media-middle">
+    <a href="#">
+      <img class="media-object" src="images/cxphp/1.png" alt="">
+    </a>
+    </div>
+    <div class="media-body">
+    <h6 class="media-heading"><桂林-阳朔-漓江-银子岩-世外</h6>
+    <p>玩转桂林 赏20元背景 夜戏山</p>
+    <p><span>跟团游</span><span style="float: right;font-size: 12px"><small>￥608</small>起</span></p>
+    </div>
+</div>
+              </li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul></div>
+        </div>
+      </div>
+      <div class="zthd">
+        <span>主题活动</span>
+        <ul class="list-group">
+  <li class="list-group-item">
+    <a href="">
+      <img src="images/zthd/jrbq.png">
+    </a>
+  </li>
+  <li class="list-group-item">
+    <a href="">
+      <img src="images/zthd/jrbq.png">
+    </a>
+  </li>
+  <li class="list-group-item"><a href="">
+      <img src="images/zthd/jrbq.png">
+    </a></li>
+  <li class="list-group-item"><a href="">
+      <img src="images/zthd/jrbq.png">
+    </a></li>
+  <li class="list-group-item"><a href="">
+      <img src="images/zthd/jrbq.png">
+    </a></li>
+</ul>
+      </div>
+      <div class="ndzj">
+        <span>您的足迹</span>
+        <div class="btn_con">
+          <button type="button" id="btn_left"><</button>
+          <button type="button" id="btn_right">></button>
+        </div>
+      </div>
+      <div class="cjwf">
+        <a href="">
+          <img src="images/cjwf.png">
+        </a>
+      </div>
+    </div>
+    </div>
+   <!--  end -->
+</div>
+<div class="footer">
+  <div class="trav_sev">
+    <ul class="ts_box">
+      <li class="trav_l_first">
+        <dl class="trav_l">
+        <dt class="tl_tt">
+           <i class="ts_1">
+          <img src="images/qly.png">
+        </i>
+          <span>去旅游</span>
+        </dt>
+        <dd>
+          <p>
+           <a href="">跟团游</a>
+           <a href="">牛人专线</a>
+           <a href="">酒店</a>
+          </p>
+          <p>
+             <a href="">自由行</a>
+           <a href="">亲子游</a>
+           <a href="">门票</a>
+          </p>
+          <p>
+             <a href="">酒+景</a>
+           <a href="">蜜月游</a>
+           <a href="">邮轮</a>
+          </p>
+          <p>
+          <a href="">公司旅游</a>
+           <a href="">海岛游</a>
+           <a href="">签证</a>
+          </p>
+          <p> 
+            <a href="">当地玩乐</a>
+           <a href="">老于推荐</a>
+           <a href="">机票</a>
+         </p>
+          <p>
+             <a href="">首付出发</a>
+           <a href="">机票+酒店</a>
+           <a href="">旅拍</a>
+          </p>
+        </dd>
+        </dl>
+      </li>
+      <li class="trav_l_two">
+        <dl class="trav_l">
+          <dt class="tl_tt">
+            <i><img src="images/qly.png"></i>
+            <span>寻优惠</span>
+          </dt>
+          <dd>
+            <p><a href="">特卖</a></p>
+            <p><a href="">订酒店 返现金</a></p>
+            <p><a href="">积分商城</a></p>
+            <p><a href="">银行特惠游</a></p>
+          </dd>
+        </dl>
+      </li>
+      <li class="trav_l_three">
+        <dl class="trav_l">
+          <dt class="tl_tt">
+            <i><img src="images/qly.png"></i>
+            <span>看攻略
+</span>
+          </dt>
+          <dd>
+            <p><a href="">攻略</a></p>
+            <p><a href="">途牛风向标</a></p>
+            <p><a href="">游记</a></p>
+            <p><a href="">达人玩法</a></p>
+          </dd>
+        </dl>
+      </li>
+
+      <li class="trav_l_four">
+        <dl class="trav_l">
+          <dt class="tl_tt">
+            <i><img src="images/qly.png"></i>
+            <span>查服务
+</span>
+          </dt>
+          <dd>
+            <p><a href="">帮助中心</a></p>
+            <p><a href="">会员俱乐部</a></p>
+            <p><a href="">阳光保障</a></p>
+            <p><a href="">火车时刻表</a></p>
+            <p><a href="">航班查询</a></p>
+          </dd>
+        </dl>
+      </li>
+      <li class="trav_l_five">
+        <dl class="trav_l">
+          <dt class="tl_tt">
+            <i><img src="images/qly.png"></i>
+            <span>途牛APP</span>
+          </dt>
+          <dd>
+            <p><span>扫描下载途牛APP</span></p>
+            <p><img src="images/ercode.png"></p>
+          </dd>
+        </dl>
+      </li>
+    </ul>
+  </div>
+  <!-- 去旅游结束 -->
+  <div class="ygxc">
+    <img src="images/ygxc.png">
+  </div>
+  <!-- 阳光行程结束 -->
+  <div class="pphz">
+    <ul>
+      <li>
+        <img src="images/pphz.png">
+      </li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  <div class="info">
+    <p>途牛客服中心设立在江苏南京及江苏宿迁，来电显示号码请查看：途牛会员中心外呼电话号码汇总</p>
+    <p>北京途牛国际旅行社有限公司，旅行社业务经营许可证编号：L-BJ-CJ00144　　上海途牛国际旅行社有限公司，旅行社业务经营许可证编号：L-SH-CJ00107</p>
+    <p>关于我们 Investor Relations 联系我们 投诉建议 广告服务 旅游券 途牛招聘 隐私保护 免责声明 旅游度假资质 主题旅游 平台服务协议 平台交易规则 网站地图</p>
+    <p>UEIP 帮助中心</p>
+    <p>Copyright © 2006-2019 南京途牛科技有限公司 Tuniu.com | 营业执照 | ICP证：苏B2-20130006 | 苏ICP备12009060号 | 广州旅游网</p>
+  </div>
+  <!-- 版权结束 -->
+  <div class="yqlj">
+    <p>友情链接：
+笛风假期途牛微博客首都航空网易旅游中国经济网旅游百度旅游人民网旅游中国制造网成都青年旅行社欣欣旅游网驴妈妈旅游网奇艺旅游拉拉勾旅游网米胖旅游</p>
+<p>网百程旅行网新疆旅游 wed114结婚网二手车中国签证资讯网19楼途家网更多</p>
+  </div>
+</div>  
+
+</body>
+</html>

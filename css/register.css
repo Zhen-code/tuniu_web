@@ -1,0 +1,170 @@
+.tuniu_img{
+	border-right: 1px solid #ccc;
+	width: 142px;
+	height: 58px;
+	margin-left: 190px;
+	margin-top: 18px;
+}
+.reg{
+	position: absolute;
+    left: 350px;
+    top: 40px;
+    font-size: 24px;
+    color: #000000;
+}
+.reg_content{
+	width: 100%;
+	border-top: 2px solid green;
+	margin-top: 28px;
+}
+.is_reg{
+	width: 1200px;
+	display: block;
+	height: 12px;
+	margin: 28px auto;
+	padding-left: 1050px;
+}
+.is_reg span{
+	font-size: 12px;
+	font-weight: bold;
+
+}
+.is_reg input{
+	height: 20px;
+	width: 48px;
+    border: 1px solid #ccc;
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #fff;
+   
+}
+.phone_reg{
+	width: 1200px;
+	margin: 100px auto;
+}
+.phone{
+	width: 1200px;
+	height: 62px;
+	text-align: center;
+	color: #fff;
+	font-size: 28px;
+	background-color: #43b413;
+	line-height: 62px;
+}
+.step{
+	width: 560px;
+	height: 44px;
+	margin: 60px auto;
+}
+form{
+	margin-left: 370px; 
+}
+.input-group b{
+	font-size: 18px;
+color: red;
+}
+.input-group .area{
+	width: 118px;
+	height: 30px;
+	border:1px solid #ccc;
+	text-align: center;
+	line-height: 30px;
+}
+.area{
+	margin-left: 88px;
+	margin-top: -38px;
+}
+.validate_hint{
+	margin-left: 218px;
+    margin-top: -32px;
+}
+.validate{
+	width: 310px;
+	height: 30px;
+	border: 1px solid #ccc;
+	margin-left: 88px;
+	margin-top: -38px;
+}
+.validate input{
+	width: 216px;
+	border: none;
+	height: 28px;
+}
+ .validate .code{
+ 	height: 32px;
+ 	width: 92px;
+ }
+ .other_code{
+margin-left: 420px;
+margin-top: -26px;
+ }
+ .jym{
+ 	margin-left: 88px;
+ 	margin-top: -38px;
+ }
+ .get_code{
+margin-left: 188px;
+ 	margin-top: -28px;
+ }
+ .get_code input{
+ 	width: 108px;
+ 	height: 28px;
+ 	background-color: #fff;
+ 	border: 1px solid #ccc;
+ }
+ .input-group p{
+ 	margin-bottom: 16px;
+ }
+ .yqm{
+margin-left: 88px;
+margin-top: -38px;
+ }
+ .yqm input{
+ 	color: #ccc;
+ 	text-align: center;
+ }
+ .ljtj{
+ 	margin-left: 288px;
+ 	margin-top: -26px;
+ }
+ .xieyi{
+ 	margin-left: 88px;
+ 	margin-top: 20px;
+ }
+ .xieyi span{
+ 	margin-left: 6px;
+ }
+ .xieyi span input{
+ display: inline-block;
+ color: green;
+ border: none;
+ height: 20px;
+ background-color: #fff;
+ border-bottom: 1px dashed green;
+ }
+ .next_step{
+ 	margin-left: 88px;	
+ }
+  .next_step input{
+  	width: 312px;
+  	height: 36px;
+  	border: none;
+  	background-color: #999999;
+  	color: #fff;
+  	text-align: center;
+  	font-size: 16px;
+  }
+  .modal-body{
+  	height: 320px;
+  }
+  .modal-body  iframe{
+  	overflow-x: hidden;
+  	white-space: nowrap;
+  	overflow: hidden;
+  	text-overflow:ellipsis;
+  	width: 580px;
+  	border: none;
+  	height: 318px;
+  	margin-top: -12px;
+  }

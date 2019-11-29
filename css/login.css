@@ -1,0 +1,116 @@
+.tn_img{
+	margin-top: 18px;
+	margin-left: 190px;
+}
+.login_content{
+width: 100%;
+height: 560px;
+background: url("../images/banner.png");
+background-repeat: no-repeat;
+}
+.login_pane{
+	position: absolute;
+	width: 404px;
+	height: 440px;
+	margin-top: 60px;
+	margin-left: 950px;
+	background-color: #fff;
+}
+.login_pane ul{
+	width: 402px;
+	height: 55px;
+	/*border-bottom: 1px dotted #999999;*/
+}
+.login_pane ul li{
+	text-align: center;
+	float: left;
+	line-height: 55px;
+	width: 180px;
+    list-style: none;
+    border-right: 1px dotted #999999;
+    font-size: 16px;
+    font-weight: bold;
+}
+.login_pane ul li:nth-child(2){
+	border-right: none;
+}
+.login_active{
+	color: #22c233;
+}
+.input-group{
+	width: 328px;
+	height: 40px;
+	border:1px solid #dddddd;
+	margin-left: 36px;
+	margin-top: 50px;
+}
+.input-group .input-group-addon{
+	background-color: #fff;
+	border:none;
+	border-radius: 0px;
+	color: #ccc;
+}
+.input-group .form-control{
+	border: none;
+	
+	height: 40px;
+}
+.input-group .input-group-addon a{
+	font-size: 12px;
+	color: green;
+}
+#ran_pass{
+	color: #000000;
+}
+#ran_pass:hover {
+	text-decoration: none;
+    color: #349f87;
+}
+.login_btn{
+	background-color: #ff8800;
+	width: 332px;
+	height: 42px;
+	border: none;
+	margin-top: 10px;
+	margin-left: 34px;
+	font-weight: bold;
+	font-size: 16px;
+	color: #fff;
+}
+.wjma{
+	width: 332px;
+	margin-left: 34px;
+	margin-top: 6px;
+}
+.wjma a{
+	text-decoration: none;
+	font-size: 12px;
+}
+.other_login{
+	position: absolute;
+	width: 400px;
+	height: 80px;
+	border-top: 1px solid #ccc;
+	/*background-color: green;*/
+	left: 952px;
+	top: 504px;
+	font-weight: bold;
+	padding-top: 24px;
+	padding-left: 26px;
+}
+.other_login ul li{
+	list-style: none;
+	float: left;
+	width: 71px;
+	height: 20px;
+	border-right: 1px solid #ccc;
+}
+.other_login ul li a{
+	text-decoration: none;
+	font-size: 12px;
+	margin-left: 26px;
+	color: #666666;
+}
+p{
+	text-align: center;
+}

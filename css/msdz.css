@@ -1,0 +1,103 @@
+.position{
+	z-index: 50;
+}
+.position span{
+	display: inline-block;
+	width: 108px;
+	height: 30px;
+}
+.position span:hover{
+	color: #ff8800;
+	border: 1px solid #ccc;
+	border-bottom: none;
+	text-indent: 6px;
+}
+.station{
+	z-index: 3000;
+}
+.show_city{
+	display: none;
+	background-color: #fff;
+	width: 502px;
+	height: 640px;
+	border: 1px solid #ccc;
+	position: absolute;
+    z-index: 2000;
+    left: 366px;
+    top: 56px;
+    padding-left: 20px;
+}
+.show_city p a{
+	margin-right: 20px;
+}
+.station_search_box{
+	width: 470px;
+	height: 32px;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+.station_search_box input{
+	width: 400px;
+	height: 22px;
+	border: none;
+	background-color: #fff;
+    margin-top: 4px;
+    margin-left: 10px;
+    outline: none;
+}
+#tags{
+	width: 470px;
+	height: 30px;
+	border-bottom: 1px solid #ccc;
+	margin-top: 10px;
+}
+#tags li{
+	list-style: none;float: left;
+	text-align: center;
+	display: inline-block;
+	padding: 4px 6px;
+}
+#tags li a{
+	text-decoration: none;
+	color: black;
+
+}
+.sa_active{
+	border: 1px solid #ccc;
+	border-top: 2px solid #ff8800;
+	border-bottom: 2px solid #fff;	 
+}
+#tagContent{
+	width: 470px;
+	height: 438px;
+	position: relative;
+}
+.tagContent{
+	position: absolute;
+	display: none;
+}
+#tag_content .line-left{
+	display: inline-block;
+	width: 33px;
+	height: 22px;
+}
+#tag_content .line-right{
+	display: inline-block;
+	width: 437px;
+	height: 69px;
+	margin-left: 6px;
+}
+.line-right a{
+	margin-left: 10px;
+}
+.selectTag{
+display: block;
+}
+#under{
+	width: 108px;
+	height: 1px;
+	border: 2px solid #fff;
+	margin-left: -20px;
+	list-style: none;
+	margin-top: -2px;
+}

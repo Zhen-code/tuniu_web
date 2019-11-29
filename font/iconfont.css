@@ -1,0 +1,21 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1560265775667'); /* IE9 */
+  src: url('iconfont.eot?t=1560265775667#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAARQAAsAAAAACLAAAAQEAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCCcAqFOIRZATYCJAMICwYABCAFhG0HMxuCB8iusCljvgzYIAVsoAucQXB5fhwioh/77b3/UGuu04lk0emaPCVIjRIJmWhSwv/p3fQdSdtwqUtqYhMHapYwiqeZqLJOxQlz/zMBhxw8awvEEg8QawRN4HkliFsAfz5x77hlCcwHFFlGc0ya1AUYf6CA9j5fJAMkMG+R3RGoRV8nQCd/MdB2Wbd+QCEZ8wLkSqVsBiplQtZUBwWxLtlaAT2CFapMkVwF8OB/P/+QFAqgsGqAUbd3WdoGBV+2Zh4x+v/UuRYYM5wD3C7QAFaBCnJU6tpBhKlVBKykSEFgWdUIfHX//++KFvvHAwFpBUPVjWmjomMS25JDVRX6fgXGgVeQ+U71jMfOHdk6WUF7W4I0+YZbQhL41Yy9gxovM5unWSwBoii/e1cxNWT+tlTz3Yq9Ytoqc+mGKyf2IFGswmazzGJRVI/ZZvbdeVe+6RI9rYbHalFGHx1z9QWLRWyzm7bAtWr+VPeahSaZm4crcse0lyfDKDfPw5pCe6B+yANFYEW5qYkmBhmdL3BFcuSB8VGttnj+fDe/C5bKa3cLFh0NkS1wc7NOQAs8kMnkUWta6Ge7/rT7GBM9UQLmp8DOMSG2C9zsNpzxGLPw3xul4aXlkb0J36uXogKZrAAVIuZ8k8JbqXvE9iPt6pZGNwecMfUpX3Vz4GFlQHXB1cZOKDwB8U0+jUKhgnj1lR4/0+c7Gz164trPwQEDt0CJpHU7OJJ56adcq77hZ9odi21qv4Qk9Mjya2HqrttOk07NOCumu5efETOmzrOb0vkFnoTzjtO7IBg8DUFb6DGc6YEngrOTRKtCT+kMsEdfEN05Zac9KiqEnkj4Ev8OhyHTCUNN+NdJumX5LSr79mENyBGcNsF4Co7T6OwYRzisds0lqMvSV/gwRcTa9XOWuLemzD6xcnVILEEdhgKAZuKI0b/Gb+D++dTHRoecr5gEwMvc63gaaBbAPKD9BroDfgQxsKuqUsNcqiwuzRXP+d/ghk4YaKK+QU+6ekZA7AiKF2MUNvzQQAkhVVoMWtBS0IqSj07Rynd3ccEjoCoFsGwCAuJoByTsnQDB0TUSSXsMK+4+w5pjCGDyuBxJC4sKF/Nss8C2MS1DGFWrXsdZVgEH1X1Y5QBNM5+U+gw5y3eookxiXEI2W87qWH6IFR0DlUmCwDEcr9cyZeg2VqPRMwZe3862CnH9BcGQFR/PlT0prlWvBawYj9VMwGrDaDEEQ6WVng7n9hfg3Of7YCkNoNGMr+mocMuxeB1UgzMSxUkAkMpVOlDHpYzuMJBSEoGAo7M4PD0tRhl2sDRmSo9hKJ/UjtVKEKd/h4RBlnjSi4Oq4qbXaO8uAToZ+hJzCAHSU5VOaVRpXCMA') format('woff2'),
+  url('iconfont.woff?t=1560265775667') format('woff'),
+  url('iconfont.ttf?t=1560265775667') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1560265775667#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bingqilin:before {
+  content: "\e60c";
+}
+

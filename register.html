@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	 <link rel="stylesheet" href="css/bootstrap.min.css">
+     <script src="js1/jquery-3.3.1.min.js"></script>
+    <script src="js1/bootstrap.min.js"></script>
+    <script src="js1/modal.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/register.css">
+</head>
+<body>
+	<div class="modal" tabindex="-1" role="dialog" id="myModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" >
+      <div class="modal-header" >
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">途牛会员协议</h4>
+      </div>
+      <div class="modal-body" >
+        
+        <iframe src="xieyi.html">
+        	
+        </iframe>	
+        
+      </div>
+    
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="tuniu_img">
+<img src="images/tuniu.png">
+</div>
+<span class="reg">欢迎注册</span>
+<div class="reg_content">
+	<p class="is_reg">
+		<span>已有途牛账号了？</span>
+		<input type="button" name="btn" value="登录">
+	</p>
+	<div class="phone_reg">
+		<div class="phone">
+			手机注册
+		</div>
+		<div class="step">
+			<img src="images/step.png">
+		</div>
+		<form>
+		<div class="input-group">
+		<p>
+			<label><b>*</b>手机号码:</label>
+			<div class="area">
+				中国0086<span class="caret"></span>
+			</div>
+			<div class="validate_hint">
+			<input type="number" name="phone_num" value="请输入手机号码" style="height: 30px;">
+			<img src="images/validate.png">
+			</div>
+		</p>
+		<p>
+			<label><b>*</b>验证码:</label>
+			<div class="validate">
+				<input type="number" name="" value="不区分大小写">
+				<div class="code">
+					
+				</div>
+			</div>
+			<div class="other_code">
+			<span>看不清，<a style="color: green;text-decoration: none;"href="">换一张</a></span>
+			</div>
+		</p>
+		<p>
+			<label><b>*</b>校验码:</label>
+			<div class="jym">
+				<input type="text" name="" value="请输入校验码" disabled="false" style="background-color: #ccc;display: inline;">
+				<div class="get_code">
+					<input type="button" name="" value="获取动态密码"> 
+				</div>
+			</div>
+		</p>
+		<p>
+			<label>邀请码:</label>
+			<div class="yqm">
+				<input type="text" name="" placeholder="推荐人手机号码">
+			</div>
+			<div class="ljtj">
+					<a href="">了解"推荐有理"</a>
+				</div>
+		</p>
+		<p class="xieyi">
+			<input type="checkbox" name="">
+			<span> 同意<input type="button" name="" value="途牛会员协议" data-toggle="modal" data-target="#myModal">和<input type="button" name="" value="途牛隐私政策" data-toggle="modal" data-target="#myModal"> 并且愿意接受旅游咨询免费信息 </span>
+		</p>
+		<p class="next_step">
+			<input type="button" name="" value="下一步">
+		</p>
+		</div>
+	</form>
+	</div>
+</div>	
+</body>
+</html>
